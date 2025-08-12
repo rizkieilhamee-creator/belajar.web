@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucin Web Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: pink;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Sembunyikan scrollbar */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite; /* Efek animasi berdenyut */
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .heart {
+            font-size: 3em;
+            color: red;
+            animation: beat 1s infinite; /* Efek animasi detak jantung */
+        }
+
+        /* Animasi berdenyut */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Animasi detak jantung */
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Efek hover pada tombol */
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Transisi halus */
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+  <img src="cewe gueh.jpg"width="200px"height="300px">
+    <div class="container">
+        <h1>Hai pacar aku!</h1>
+        <p>cemangat pacar aku</p>
+        <div class="heart">💖</div>
+        <button onclick="showAlert()">Klik Aku!</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("jangan lupa mam ya!!");
+        }
+    </script>
+</body>
+</html>
